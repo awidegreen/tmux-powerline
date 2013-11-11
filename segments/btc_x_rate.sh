@@ -7,7 +7,7 @@
 run_segment() {
   local tmp_file="${TMUX_POWERLINE_DIR_TEMPORARY}/btc_x_rate.txt"
   local btc_x_rate
-  local bcexrate="./bcexrate.rb"
+  local bcexrate="${TMUX_POWERLINE_DIR_LIB}/bcexrate.rb"
 
   if [ -f "$tmp_file" ]; then
     if shell_is_osx || shell_is_bsd; then
